@@ -54,7 +54,7 @@ def chi_square(time_array: np.array,
 
     expected_value = expected(time_array, num_bins)
 
-    chi2 = np.sum((histogram_arr - expected_value) ** 2/expected_value ** 2)
+    chi2 = np.sum((histogram_arr - expected_value) ** 2 / expected_value)
 
     return chi2
 
